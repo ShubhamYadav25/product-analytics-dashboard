@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
   'http://localhost:3000',
   process.env.FRONTEND_URL,
-  'https://your-frontend-url.vercel.app' // Add your actual frontend URL
+  'https://product-analytics-dashboard-x7l3.vercel.app' // Add your actual frontend URL
 ].filter(Boolean);
 
 app.use(cors({

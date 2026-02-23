@@ -13,6 +13,6 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: FRONTEND_URL
-        value: https://your-frontend-url.vercel.app # Will update after frontend deploy
+        value: https://product-analytics-dashboard-x7l3.vercel.app # Will update after frontend deploy
       - key: PORT
         value: 10000
