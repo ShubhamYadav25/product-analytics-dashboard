@@ -25,7 +25,6 @@ const Dashboard = () => {
   const [barChartData, setBarChartData] = useState([]);
   const [lineChartData, setLineChartData] = useState([]);
   const [selectedFeature, setSelectedFeature] = useState(null);
-  const [features, setFeatures] = useState([]);
   
   // Filter states
   const [filters, setFilters] = useState({
@@ -59,7 +58,6 @@ const Dashboard = () => {
 
       const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/analytics`, { params });
       setBarChartData(response.data.barChartData);
-      setFeatures(response.data.features);
       
       // Track filter application
       trackFeature('filter_apply');
